@@ -1,0 +1,47 @@
+<html>
+    <head><title>Form 1</title>
+    <link rel="stylesheet" href="./css/form.css">
+    </head>
+    <body>
+        <h2>ENTER YOUR DETAILS</h2>
+        <div id="form">
+        <form action="action.html" method="post" id="form1" enctype="multipart/form-data" >
+            <div>Name</div><input type="text" id="name" placeholder="name">
+            <div>Date of birth</div> <input type="date" id="date" placeholder="dob">
+            <div>Age</div>
+            <select name="age" id="age">
+                <option value=""  selected>choose any</option>
+                <option value="1-10">1-10</option>
+                <option value="10-20">10-20</option>
+                <option value="20-30">20-30</option>
+                <option value="40+">40+</option>
+            </select>
+            <div>Address</Address></div><textarea name="Address" id="address" placeholder="address"></textarea>
+            <div>Gender</div>
+                <div>
+                    <input type="radio" id="gender_female" name="gender" value="Female">Female
+                    <input type="radio" id="gender_male" name="gender" value="Male">Male
+                </div>
+                
+                <div>Hobbies</div>
+                <div>
+                    <span><input type="checkbox" id="hobby_dancing" name="Hobbies">Dancing</span>
+                    <span><input type="checkbox" id="hobby_singing" name="Hobbies">Singing</span>
+                    <span><input type="checkbox" id="hobby_painting" name="Hobbies">Painting</span>
+                    <span><input type="checkbox" id="hobby_drawing" name="Hobbies">Drawing</span>
+                    <span><input type="checkbox" id="hobby_reading" name="Hobbies">Reading</span>
+                    <span><input type="checkbox" id="hobby_none" name="Hobbies">None of the above</span>
+                </div>
+                <div>Photo</div>
+                <input type="file" id="photo" name="photo">
+            
+            <div><input type="submit" id="submit" value="submit" onclick="validate();"></div>
+            <div id="error"></div>
+        </form>
+        
+    </div>
+    <script src="js/script.js">
+    
+    </script> 
+    </body>
+</html>
